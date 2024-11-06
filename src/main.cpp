@@ -1,5 +1,5 @@
-#include "matrix.h"
-#include "methods.h"
+#include "headers/matrix.h"
+#include "headers/methods.h"
 #include <iostream>
 
 int main() {
