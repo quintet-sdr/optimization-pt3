@@ -1,10 +1,11 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
 class TransportMatrix {
-private:
+public:
     vector<int> supply;
     vector<int> demand;
     vector<vector<int>> costs;
@@ -29,6 +30,19 @@ public:
         this->supply = S;
         this->costs = C;
         this->demand = D;
+    }
+
+
+    friend ostream& operator>> (ostream& out, const TransportMatrix& tm) {
+        cout << "SOURCE     COSTS     SUPPLY" << endl;
+        int source_i = 1;
+        for (int i = 0; i < tm.costs.size(); i++) {
+            string row = "";
+            for (int j = 0; j < tm.costs[i].size(); j++)
+        }
+        
+        
+        return out;
     }
 };
 
