@@ -3,8 +3,8 @@
 #include <vector>
 #include <string>
 #include <iomanip>
-//#include "matrix.h"
 #include "methods.h"
+#include "matrix.h"
 
 using namespace std;
 
@@ -70,18 +70,4 @@ public:
 
     return out;
   }
-
 };
-
-int main() {
-    vector<int> s = {3, 2, 1};
-    vector<int> d = {1, 2, 1, 1, 1};
-    vector<vector<int>> c = {
-        {1, 2, 3, 4, 4},
-        {1, 6, 7, 5, 5},
-        {4, 7, 8, 6, 7}
-    };
-
-    TransportMatrix tm = TransportMatrix(s, c, d);
-    cout << tm;
-}

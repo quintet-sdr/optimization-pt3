@@ -1,7 +1,7 @@
 #include "methods.h"
-#include <matrix.cpp>
+#include "matrix.h"
+#include <vector>
 
-void north_west(TransportMatrix tm) 
-{
-    
-}
+using std::vector;
+
+void north_west(TransportMatrix tm) {}
