@@ -1,4 +1,7 @@
 #include "headers/matrix.h"
+#include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
 int main() {
     vector<int> s = {1, 2, 3};

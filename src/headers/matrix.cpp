@@ -1,17 +1,12 @@
 #include "matrix.h"
-
+#include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
 
-class TransportMatrix {
-public:
-    vector<int> supply;
-    vector<int> demand;
-    vector<vector<int>> costs;
+    TransportMatrix::TransportMatrix() {};
 
-public:
-    TransportMatrix() {};
-
-    TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D) {
+    TransportMatrix::TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D) {
         int sum_S = 0, sum_D = 0;
         for (int i = 0; i < S.size(); i++) {
             sum_S += S[i];
@@ -31,7 +26,7 @@ public:
     }
 
 
-    friend ostream& operator<< (ostream& out, const TransportMatrix& tm) {
+    ostream& operator<< (ostream& out, const TransportMatrix& tm) {
         cout << "SOURCE     COSTS     SUPPLY" << endl;
         int source_i = 1;
         for (int i = 0; i < tm.costs.size(); i++) {
@@ -49,6 +44,5 @@ public:
         cout << "DEMAND | " + demand + "| ";
         return out;
     }
-};
 
 
