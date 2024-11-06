@@ -1,12 +1,24 @@
+#include <iostream>
+#include <utility>
+#include <vector>
+#include <string>
+#include <iomanip>
+#include "methods.h"
 #include "matrix.h"
 #include <iostream>
 #include <vector>
 #include <string>
 using namespace std;
 
-    TransportMatrix::TransportMatrix() {};
+class TransportMatrix {
+public:
+        vector<int> supply;
+        vector<int> demand;
+        vector<vector<int>> costs;
+public:
+    TransportMatrix() = default;
 
-    TransportMatrix::TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D) {
+    TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D) {
         int sum_S = 0, sum_D = 0;
         for (int i = 0; i < S.size(); i++) {
             sum_S += S[i];
@@ -21,28 +33,44 @@ using namespace std;
         }
 
         this->supply = S;
-        this->costs = C;
+        this->costs = std::move(C);
         this->demand = D;
     }
 
 
-    ostream& operator<< (ostream& out, const TransportMatrix& tm) {
-        cout << "SOURCE     COSTS     SUPPLY" << endl;
-        int source_i = 1;
-        for (int i = 0; i < tm.costs.size(); i++) {
-            string row = "";
-            for (int j = 0; j < tm.costs[i].size(); j++) {
-                row += tm.costs[i][j] + " |";
-            }
-            cout << source_i++ << " " << row << " " << tm.supply[i] << endl;
-        }
-        // cout << "------" << tm.costs.size() * "-" << "------" << endl;
-        string demand = "";
-        for (int i = 0; i < tm.demand.size(); i++) {
-            demand += tm.demand[i] + " ";
-        }
-        cout << "DEMAND | " + demand + "| ";
-        return out;
+
+  friend ostream& operator<< (ostream& out, const TransportMatrix& tm) {
+    // Заголовок таблицы
+    cout << left << setw(15) << "SOURCE";
+    cout << left << setw(6 * tm.costs[0].size()) << "COST";
+//    for (int i = 0; i < tm.costs[0].size(); i++) {
+//    }
+    cout << left << setw(8) << "SUPPLY" << endl;
+
+    // Разделитель
+    cout << string(tm.costs[0].size() * 6 + 28, '-') << endl;
+
+    // Вывод строк таблицы
+    int source_i = 1;
+    for (int i = 0; i < tm.costs.size(); i++) {
+      cout << left << setw(10) << source_i++;
+      for (int j = 0; j < tm.costs[i].size(); j++) {
+        cout << right << setw(6) << tm.costs[i][j];
+      }
+      cout << right << setw(6) << tm.supply[i] << endl;
     }
 
+    // Разделитель
+    cout << string(tm.costs[0].size() * 6 + 28, '-') << endl;
+
+    // Вывод строки DEMAND
+    cout << left << setw(10) << "DEMAND";
+    for (int i = 0; i < tm.demand.size(); i++) {
+      cout << right << setw(6) << tm.demand[i];
+    }
+    cout << left << setw(8) << endl;
+
+    return out;
+  }
+};
 
