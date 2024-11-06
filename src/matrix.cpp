@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+// #include "matrix.h"
 
 using namespace std;
 
@@ -33,22 +34,29 @@ public:
     }
 
 
-    friend ostream& operator>> (ostream& out, const TransportMatrix& tm) {
+    friend ostream& operator<< (ostream& out, const TransportMatrix& tm) {
         cout << "SOURCE     COSTS     SUPPLY" << endl;
         int source_i = 1;
         for (int i = 0; i < tm.costs.size(); i++) {
             string row = "";
-            for (int j = 0; j < tm.costs[i].size(); j++)
+            for (int j = 0; j < tm.costs[i].size(); j++) {
+                row += tm.costs[i][j] + " |";
+            }
+            cout << source_i++ << " " << row << " " << tm.supply[i] << endl;
         }
-        
-        
+        // cout << "------" << tm.costs.size() * "-" << "------" << endl;
+        string demand = "";
+        for (int i = 0; i < tm.demand.size(); i++) {
+            demand += tm.demand[i] + " ";
+        }
+        cout << "DEMAND | " + demand + "| ";
         return out;
     }
 };
 
 int main() {
     vector<int> s = {1, 2, 3};
-    vector<int> d = {3, 3, 1};
+    vector<int> d = {3, 2, 1};
     vector<vector<int>> c = {
         {1, 2, 3},
         {1, 2, 3},
@@ -56,4 +64,5 @@ int main() {
     };
 
     TransportMatrix tm = TransportMatrix(s, c, d);
+    cout << tm;
 }
