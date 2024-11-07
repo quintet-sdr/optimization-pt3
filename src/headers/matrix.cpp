@@ -3,8 +3,7 @@
 #include <vector>
 #include <string>
 #include <iomanip>
-#include "matrix.h"
-
+#include "matrix.hpp"
 using namespace std;
 
 
