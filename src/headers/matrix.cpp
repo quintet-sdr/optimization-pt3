@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 #include <iomanip>
-#include "matrix.h"
+#include "matrix.hpp"
 #include <iostream>
 #include <vector>
 #include <string>

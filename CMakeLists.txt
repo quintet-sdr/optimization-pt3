@@ -3,13 +3,14 @@ project(optimization_pt3)
 
 set(CMAKE_CXX_STANDARD 17)
 
-include_directories(src/headers)
+include_directories(src)
+add_library(matrix src/headers/matrix.cpp)
+add_library(north-west src/headers/north-west.cpp)
+add_library(russel src/headers/russel.cpp)
+add_library(vogel src/headers/vogel.cpp)
 
-add_executable(optimization_pt3
-        src/headers/matrix.cpp
-        src/headers/matrix.h
-        src/headers/methods.h
-        src/headers/north-west.cpp
-        src/headers/russel.cpp
-        src/headers/vogel.cpp
-        src/main.cpp)
+add_executable(optimization_pt3 src/main.cpp)
+target_link_libraries(optimization_pt3 matrix)
+target_link_libraries(optimization_pt3 north-west)
+target_link_libraries(optimization_pt3 russel)
+target_link_libraries(optimization_pt3 vogel)
