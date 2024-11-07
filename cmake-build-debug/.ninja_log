@@ -1,0 +1,5 @@
+# ninja log v5
+2	16	1730973624636840764	CMakeFiles/optimization_pt3.dir/src/headers/russel.cpp.o	8ab0bdae97f50bd5
+2	18	1730973624638840703	CMakeFiles/optimization_pt3.dir/src/headers/vogel.cpp.o	6e5338bf60fb7088
+2	308	1730973624927831945	CMakeFiles/optimization_pt3.dir/src/headers/north-west.cpp.o	5d45ce4ec28e4c8a
+2	395	1730973625014829307	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	bb34cbc6f95a416d
