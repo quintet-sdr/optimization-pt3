@@ -1,4 +1,4 @@
-#include "headers/matrix.h"
+#include "headers/matrix.hpp"
 #include <iostream>
 #include <vector>
 #include <string>

@@ -1,5 +1,5 @@
 #include "methods.hpp"
-#include "matrix.h"
+#include "matrix.hpp"
 #include <vector>
 
 using std::vector;
