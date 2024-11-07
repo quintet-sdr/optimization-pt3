@@ -11,8 +11,8 @@ class TransportMatrix{
         vector<vector<int>> costs;
         
     public:
-        TransportMatrix() {};
-        TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D) { };
+        TransportMatrix();
+        TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D);
         friend ostream& operator<< (ostream& out, const TransportMatrix& tm) { return out; }
 };
 #endif

@@ -3,43 +3,33 @@
 #include <vector>
 #include <string>
 #include <iomanip>
-#include "methods.h"
 #include "matrix.h"
 #include <iostream>
 #include <vector>
 #include <string>
 using namespace std;
 
-class TransportMatrix {
-public:
-        vector<int> supply;
-        vector<int> demand;
-        vector<vector<int>> costs;
-public:
-    TransportMatrix() = default;
 
-    TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D) {
-        int sum_S = 0, sum_D = 0;
-        for (int i = 0; i < S.size(); i++) {
-            sum_S += S[i];
-        }
-        for (int i = 0; i < D.size(); i++) {
-            sum_D += D[i];
-        }
+TransportMatrix::TransportMatrix() : supply(0), demand(0), costs(0) {};
 
-        if (sum_S != sum_D) {
-            cout << "The problem is not balanced" << endl;
-            exit(-1);
-        }
-
-        this->supply = S;
-        this->costs = std::move(C);
-        this->demand = D;
+TransportMatrix::TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D) : supply(S), demand(D), costs(C) {
+    int sum_S = 0, sum_D = 0;
+    for (int i = 0; i < S.size(); i++) {
+        sum_S += S[i];
+    }
+    for (int i = 0; i < D.size(); i++) {
+        sum_D += D[i];
     }
 
+    if (sum_S != sum_D) {
+        cout << "The problem is not balanced" << endl;
+        exit(-1);
+    }
+}
 
 
-  friend ostream& operator<< (ostream& out, const TransportMatrix& tm) {
+
+ostream& operator<< (ostream out, TransportMatrix tm) {
     // Заголовок таблицы
     cout << left << setw(15) << "SOURCE";
     cout << left << setw(6 * tm.costs[0].size()) << "COST";
@@ -71,6 +61,6 @@ public:
     cout << left << setw(8) << endl;
 
     return out;
-  }
-};
+}
+
 
