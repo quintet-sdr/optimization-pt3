@@ -1,5 +1,16 @@
 # ninja log v5
-2	16	1730973624636840764	CMakeFiles/optimization_pt3.dir/src/headers/russel.cpp.o	8ab0bdae97f50bd5
-2	18	1730973624638840703	CMakeFiles/optimization_pt3.dir/src/headers/vogel.cpp.o	6e5338bf60fb7088
-2	308	1730973624927831945	CMakeFiles/optimization_pt3.dir/src/headers/north-west.cpp.o	5d45ce4ec28e4c8a
 2	395	1730973625014829307	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	bb34cbc6f95a416d
+2	308	1730973624927831945	CMakeFiles/optimization_pt3.dir/src/headers/north-west.cpp.o	5d45ce4ec28e4c8a
+2	18	1730973624638840703	CMakeFiles/optimization_pt3.dir/src/headers/vogel.cpp.o	6e5338bf60fb7088
+2	16	1730973624636840764	CMakeFiles/optimization_pt3.dir/src/headers/russel.cpp.o	8ab0bdae97f50bd5
+1	22	1730973855892127092	build.ninja	5382c9427220404e
+2	16	1730973855914123964	CMakeFiles/optimization_pt3.dir/src/headers/vogel.cpp.o	34492581173e87f0
+2	16	1730973855914123964	CMakeFiles/optimization_pt3.dir/src/headers/russel.cpp.o	b343e2d5254d4cd7
+2	340	1730973856237078120	CMakeFiles/optimization_pt3.dir/src/headers/north-west.cpp.o	5e26640049490af6
+3	395	1730973856292070319	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	29da69485579cf5c
+1	475	1730973856371059113	CMakeFiles/optimization_pt3.dir/src/headers/matrix.cpp.o	27a1e2461d6cd7cb
+475	557	1730973856452047624	optimization_pt3	8d4e350e0a995dda
+1	474	1730973956342300113	CMakeFiles/optimization_pt3.dir/src/headers/matrix.cpp.o	27a1e2461d6cd7cb
+474	555	1730973956423290795	optimization_pt3	8d4e350e0a995dda
+2	481	1730974000138458283	CMakeFiles/optimization_pt3.dir/src/headers/matrix.cpp.o	27a1e2461d6cd7cb
+481	564	1730974000220449575	optimization_pt3	8d4e350e0a995dda
