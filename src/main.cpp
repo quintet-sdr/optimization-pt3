@@ -12,6 +12,6 @@ int main() {
         {1, 2, 3}
     };
 
-    TransportMatrix tm = TransportMatrix(s, c, d);
+    MATRIX_H::TransportMatrix tm(s, c, d);
     cout << tm;
 }
