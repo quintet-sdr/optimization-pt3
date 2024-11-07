@@ -12,7 +12,7 @@ using namespace std;
 
 TransportMatrix::TransportMatrix() : supply(0), demand(0), costs(0) {};
 
-TransportMatrix::TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D) : supply(S), demand(D), costs(C) {
+TransportMatrix::TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D) : supply(S), demand(D), costs(std::move(C)) {
     int sum_S = 0, sum_D = 0;
     for (int i = 0; i < S.size(); i++) {
         sum_S += S[i];
