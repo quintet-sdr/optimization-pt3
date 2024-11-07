@@ -41,46 +41,146 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/projacktor/Projects/optimization-pt3/cmake-build-debug/
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target matrix
+
+
+#############################################
+# Order-only phony target for matrix
+
+build cmake_object_order_depends_target_matrix: phony || CMakeFiles/matrix.dir
+
+build CMakeFiles/matrix.dir/src/headers/matrix.cpp.o: CXX_COMPILER__matrix_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/headers/matrix.cpp || cmake_object_order_depends_target_matrix
+  DEP_FILE = CMakeFiles/matrix.dir/src/headers/matrix.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src
+  OBJECT_DIR = CMakeFiles/matrix.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix.dir/src/headers
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target matrix
+
+
+#############################################
+# Link the static library libmatrix.a
+
+build libmatrix.a: CXX_STATIC_LIBRARY_LINKER__matrix_Debug CMakeFiles/matrix.dir/src/headers/matrix.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/matrix.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libmatrix.a
+  TARGET_PDB = matrix.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target north-west
+
+
+#############################################
+# Order-only phony target for north-west
+
+build cmake_object_order_depends_target_north-west: phony || CMakeFiles/north-west.dir
+
+build CMakeFiles/north-west.dir/src/headers/north-west.cpp.o: CXX_COMPILER__north-west_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/headers/north-west.cpp || cmake_object_order_depends_target_north-west
+  DEP_FILE = CMakeFiles/north-west.dir/src/headers/north-west.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src
+  OBJECT_DIR = CMakeFiles/north-west.dir
+  OBJECT_FILE_DIR = CMakeFiles/north-west.dir/src/headers
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target north-west
+
+
+#############################################
+# Link the static library libnorth-west.a
+
+build libnorth-west.a: CXX_STATIC_LIBRARY_LINKER__north-west_Debug CMakeFiles/north-west.dir/src/headers/north-west.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/north-west.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libnorth-west.a
+  TARGET_PDB = north-west.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target russel
+
+
+#############################################
+# Order-only phony target for russel
+
+build cmake_object_order_depends_target_russel: phony || CMakeFiles/russel.dir
+
+build CMakeFiles/russel.dir/src/headers/russel.cpp.o: CXX_COMPILER__russel_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/headers/russel.cpp || cmake_object_order_depends_target_russel
+  DEP_FILE = CMakeFiles/russel.dir/src/headers/russel.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src
+  OBJECT_DIR = CMakeFiles/russel.dir
+  OBJECT_FILE_DIR = CMakeFiles/russel.dir/src/headers
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target russel
+
+
+#############################################
+# Link the static library librussel.a
+
+build librussel.a: CXX_STATIC_LIBRARY_LINKER__russel_Debug CMakeFiles/russel.dir/src/headers/russel.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/russel.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = librussel.a
+  TARGET_PDB = russel.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target vogel
+
+
+#############################################
+# Order-only phony target for vogel
+
+build cmake_object_order_depends_target_vogel: phony || CMakeFiles/vogel.dir
+
+build CMakeFiles/vogel.dir/src/headers/vogel.cpp.o: CXX_COMPILER__vogel_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/headers/vogel.cpp || cmake_object_order_depends_target_vogel
+  DEP_FILE = CMakeFiles/vogel.dir/src/headers/vogel.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src
+  OBJECT_DIR = CMakeFiles/vogel.dir
+  OBJECT_FILE_DIR = CMakeFiles/vogel.dir/src/headers
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target vogel
+
+
+#############################################
+# Link the static library libvogel.a
+
+build libvogel.a: CXX_STATIC_LIBRARY_LINKER__vogel_Debug CMakeFiles/vogel.dir/src/headers/vogel.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/vogel.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libvogel.a
+  TARGET_PDB = vogel.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target optimization_pt3
 
 
 #############################################
 # Order-only phony target for optimization_pt3
 
-build cmake_object_order_depends_target_optimization_pt3: phony || CMakeFiles/optimization_pt3.dir
-
-build CMakeFiles/optimization_pt3.dir/src/headers/matrix.cpp.o: CXX_COMPILER__optimization_pt3_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/headers/matrix.cpp || cmake_object_order_depends_target_optimization_pt3
-  DEP_FILE = CMakeFiles/optimization_pt3.dir/src/headers/matrix.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src/headers
-  OBJECT_DIR = CMakeFiles/optimization_pt3.dir
-  OBJECT_FILE_DIR = CMakeFiles/optimization_pt3.dir/src/headers
-
-build CMakeFiles/optimization_pt3.dir/src/headers/north-west.cpp.o: CXX_COMPILER__optimization_pt3_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/headers/north-west.cpp || cmake_object_order_depends_target_optimization_pt3
-  DEP_FILE = CMakeFiles/optimization_pt3.dir/src/headers/north-west.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src/headers
-  OBJECT_DIR = CMakeFiles/optimization_pt3.dir
-  OBJECT_FILE_DIR = CMakeFiles/optimization_pt3.dir/src/headers
-
-build CMakeFiles/optimization_pt3.dir/src/headers/russel.cpp.o: CXX_COMPILER__optimization_pt3_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/headers/russel.cpp || cmake_object_order_depends_target_optimization_pt3
-  DEP_FILE = CMakeFiles/optimization_pt3.dir/src/headers/russel.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src/headers
-  OBJECT_DIR = CMakeFiles/optimization_pt3.dir
-  OBJECT_FILE_DIR = CMakeFiles/optimization_pt3.dir/src/headers
-
-build CMakeFiles/optimization_pt3.dir/src/headers/vogel.cpp.o: CXX_COMPILER__optimization_pt3_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/headers/vogel.cpp || cmake_object_order_depends_target_optimization_pt3
-  DEP_FILE = CMakeFiles/optimization_pt3.dir/src/headers/vogel.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src/headers
-  OBJECT_DIR = CMakeFiles/optimization_pt3.dir
-  OBJECT_FILE_DIR = CMakeFiles/optimization_pt3.dir/src/headers
+build cmake_object_order_depends_target_optimization_pt3: phony || cmake_object_order_depends_target_matrix cmake_object_order_depends_target_north-west cmake_object_order_depends_target_russel cmake_object_order_depends_target_vogel
 
 build CMakeFiles/optimization_pt3.dir/src/main.cpp.o: CXX_COMPILER__optimization_pt3_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/main.cpp || cmake_object_order_depends_target_optimization_pt3
   DEP_FILE = CMakeFiles/optimization_pt3.dir/src/main.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src/headers
+  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src
   OBJECT_DIR = CMakeFiles/optimization_pt3.dir
   OBJECT_FILE_DIR = CMakeFiles/optimization_pt3.dir/src
 
@@ -92,8 +192,9 @@ build CMakeFiles/optimization_pt3.dir/src/main.cpp.o: CXX_COMPILER__optimization
 #############################################
 # Link the executable optimization_pt3
 
-build optimization_pt3: CXX_EXECUTABLE_LINKER__optimization_pt3_Debug CMakeFiles/optimization_pt3.dir/src/headers/matrix.cpp.o CMakeFiles/optimization_pt3.dir/src/headers/north-west.cpp.o CMakeFiles/optimization_pt3.dir/src/headers/russel.cpp.o CMakeFiles/optimization_pt3.dir/src/headers/vogel.cpp.o CMakeFiles/optimization_pt3.dir/src/main.cpp.o
+build optimization_pt3: CXX_EXECUTABLE_LINKER__optimization_pt3_Debug CMakeFiles/optimization_pt3.dir/src/main.cpp.o | libmatrix.a libnorth-west.a librussel.a libvogel.a || libmatrix.a libnorth-west.a librussel.a libvogel.a
   FLAGS = -g
+  LINK_LIBRARIES = libmatrix.a  libnorth-west.a  librussel.a  libvogel.a
   OBJECT_DIR = CMakeFiles/optimization_pt3.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -126,6 +227,14 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build matrix: phony libmatrix.a
+
+build north-west: phony libnorth-west.a
+
+build russel: phony librussel.a
+
+build vogel: phony libvogel.a
+
 # =============================================================================
 # Folder targets.
 
@@ -134,7 +243,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/projacktor/Projects/optimization-pt3/cmake-build-debug
 
-build all: phony optimization_pt3
+build all: phony libmatrix.a libnorth-west.a librussel.a libvogel.a optimization_pt3
 
 # =============================================================================
 # Built-in targets

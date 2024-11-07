@@ -1,3 +1,7 @@
+/home/projacktor/Projects/optimization-pt3/cmake-build-debug/CMakeFiles/matrix.dir
+/home/projacktor/Projects/optimization-pt3/cmake-build-debug/CMakeFiles/north-west.dir
+/home/projacktor/Projects/optimization-pt3/cmake-build-debug/CMakeFiles/russel.dir
+/home/projacktor/Projects/optimization-pt3/cmake-build-debug/CMakeFiles/vogel.dir
 /home/projacktor/Projects/optimization-pt3/cmake-build-debug/CMakeFiles/optimization_pt3.dir
 /home/projacktor/Projects/optimization-pt3/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/projacktor/Projects/optimization-pt3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
