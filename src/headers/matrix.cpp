@@ -45,7 +45,8 @@ ostream& operator<< (ostream& out, TransportMatrix& tm) {
     for (int i = 0; i < tm.demand.size(); i++) {
       out << right << setw(6) << tm.demand[i];
     }
-    out << left << setw(8) << endl;
+    out << endl;
+//    out << left << setw(8) << endl;
 
     return out;
 }
