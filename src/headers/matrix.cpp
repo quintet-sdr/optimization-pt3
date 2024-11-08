@@ -1,12 +1,8 @@
-#include <iostream>
 #include <utility>
-#include <vector>
-#include <string>
 #include <iomanip>
 #include "matrix.hpp"
 
 using namespace std;
-
 
 TransportMatrix::TransportMatrix() : supply(0), demand(0), costs(0) {};
 
@@ -24,8 +20,6 @@ TransportMatrix::TransportMatrix(vector<int> S, vector<vector<int>> C, vector<in
         exit(-1);
     }
 }
-
-
 
 ostream& operator<< (ostream& out, TransportMatrix& tm) {
     out << left << setw(15) << "SOURCE";
@@ -55,5 +49,6 @@ ostream& operator<< (ostream& out, TransportMatrix& tm) {
 
     return out;
 }
+
 
 

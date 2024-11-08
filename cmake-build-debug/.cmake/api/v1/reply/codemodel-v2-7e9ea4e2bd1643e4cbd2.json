@@ -16,10 +16,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						1,
-						2,
-						3,
-						4
+						1
 					]
 				}
 			],
@@ -35,10 +32,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						1,
-						2,
-						3,
-						4
+						1
 					]
 				}
 			],
@@ -53,30 +47,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "north-west::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-north-west-Debug-114feabcc6dd3304fb92.json",
-					"name" : "north-west",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "optimization_pt3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-optimization_pt3-Debug-bb4f1f1e37bcdacfaba5.json",
+					"jsonFile" : "target-optimization_pt3-Debug-02fbb21d5bf5e90e06f7.json",
 					"name" : "optimization_pt3",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "russel::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-russel-Debug-13f223c71f85478eef0d.json",
-					"name" : "russel",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "vogel::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-vogel-Debug-ba3a7be91eaf6c4e81b9.json",
-					"name" : "vogel",
 					"projectIndex" : 0
 				}
 			]

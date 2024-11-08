@@ -1,16 +1,12 @@
 # ninja log v5
-1	437	1730975454553272946	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	563bb3bed7eb05cd
-0	26	1731009233448576019	build.ninja	5382c9427220404e
-17	26	1730974924621138551	libvogel.a	dc357220637864d
-2	340	1730973856237078120	CMakeFiles/optimization_pt3.dir/src/headers/north-west.cpp.o	5e26640049490af6
-2	16	1730973855914123964	CMakeFiles/optimization_pt3.dir/src/headers/vogel.cpp.o	34492581173e87f0
-2	16	1730973855914123964	CMakeFiles/optimization_pt3.dir/src/headers/russel.cpp.o	b343e2d5254d4cd7
-2	517	1731008777916702020	CMakeFiles/matrix.dir/src/headers/matrix.cpp.o	7b5135d6bdfab72a
-531	626	1731008778023694998	optimization_pt3	39f64fddcefd302c
-16	26	1730974924620138595	librussel.a	8aa3e03b00bb5ed7
-2	463	1730974345087145459	CMakeFiles/optimization_pt3.dir/src/headers/matrix.cpp.o	27a1e2461d6cd7cb
-2	334	1730974924927125114	CMakeFiles/north-west.dir/src/headers/north-west.cpp.o	8d769c6c8e074aec
-2	16	1730974924610139034	CMakeFiles/russel.dir/src/headers/russel.cpp.o	1da3d969608a8078
 334	344	1730974924938124631	libnorth-west.a	dca9c96ef5d1f1b
+2	16	1730974924610139034	CMakeFiles/russel.dir/src/headers/russel.cpp.o	1da3d969608a8078
+2	334	1730974924927125114	CMakeFiles/north-west.dir/src/headers/north-west.cpp.o	8d769c6c8e074aec
+16	26	1730974924620138595	librussel.a	8aa3e03b00bb5ed7
+531	626	1731008778023694998	optimization_pt3	39f64fddcefd302c
+2	517	1731008777916702020	CMakeFiles/matrix.dir/src/headers/matrix.cpp.o	7b5135d6bdfab72a
+17	26	1730974924621138551	libvogel.a	dc357220637864d
+1	437	1730975454553272946	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	563bb3bed7eb05cd
 3	17	1730974924610139034	CMakeFiles/vogel.dir/src/headers/vogel.cpp.o	a41cc11c3958389a
+0	26	1731055843361285196	build.ninja	5382c9427220404e
 518	531	1731008777931701036	libmatrix.a	28310c546ed89fb5
