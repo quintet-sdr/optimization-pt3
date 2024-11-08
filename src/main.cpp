@@ -1,5 +1,6 @@
 #include "headers/matrix.hpp"
 #include "headers/north_west.hpp"
+#include "headers/vogel.hpp"
 
 using namespace std;
 
@@ -12,10 +13,9 @@ int main() {
         {4, 5, 9, 8},
         {9, 2, 3, 6}
     };
-
     TransportMatrix tm(s, c, d);
     cout << tm;
-//    vogel(tm);
+    vogel(tm);
     north_west(tm);
     return 0;
 }
