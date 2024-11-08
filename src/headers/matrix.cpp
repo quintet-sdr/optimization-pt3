@@ -1,6 +1,7 @@
 #include <utility>
 #include <iomanip>
-#include "matrix.h"
+#include "matrix.hpp"
+
 using namespace std;
 
 TransportMatrix::TransportMatrix() : supply(0), demand(0), costs(0) {};
