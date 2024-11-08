@@ -6,13 +6,13 @@ using namespace std;
 
 TransportMatrix::TransportMatrix() : supply(0), demand(0), costs(0) {};
 
-TransportMatrix::TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D) : supply(S), demand(D), costs(std::move(C)) {
+TransportMatrix::TransportMatrix(const vector<int>& S, vector<vector<int>> C, const vector<int>& D) : supply(S), demand(D), costs(std::move(C)) {
     int sum_S = 0, sum_D = 0;
-    for (int i = 0; i < S.size(); i++) {
-        sum_S += S[i];
+    for (int i : S) {
+        sum_S += i;
     }
-    for (int i = 0; i < D.size(); i++) {
-        sum_D += D[i];
+    for (int i : D) {
+        sum_D += i;
     }
 
     if (sum_S != sum_D) {
@@ -32,9 +32,9 @@ ostream& operator<< (ostream& out, TransportMatrix& tm) {
 
     int source_i = 1;
     for (int i = 0; i < tm.costs.size(); i++) {
-      out << left << setw(10) << source_i++;
-      for (int j = 0; j < tm.costs[i].size(); j++) {
-        out << right << setw(6) << tm.costs[i][j];
+      out << left << setw(10) << "A" + to_string(source_i++);
+      for (int j : tm.costs[i]) {
+        out << right << setw(6) << j;
       }
       out << right << setw(6) << tm.supply[i] << endl;
     }
@@ -42,10 +42,11 @@ ostream& operator<< (ostream& out, TransportMatrix& tm) {
     out << string(tm.costs[0].size() * 6 + 28, '-') << endl;
 
     out << left << setw(10) << "DEMAND";
-    for (int i = 0; i < tm.demand.size(); i++) {
-      out << right << setw(6) << tm.demand[i];
+    for (int i : tm.demand) {
+      out << right << setw(6) << i;
     }
-    out << left << setw(8) << endl;
+    out << endl;
+//    out << left << setw(8) << endl;
 
     return out;
 }
