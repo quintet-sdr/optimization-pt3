@@ -116,4 +116,7 @@ CMakeFiles/optimization_pt3.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\basic_ios.tcc \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\ostream.tcc \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\istream \
- c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\istream.tcc
+ c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\istream.tcc \
+ C:\Users\carry\Desktop\optimization-pt3\src\headers/north_west.hpp \
+ C:\Users\carry\Desktop\optimization-pt3\src\headers/matrix.hpp \
+ C:\Users\carry\Desktop\optimization-pt3\src\headers/vogel.hpp

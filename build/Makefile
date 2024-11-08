@@ -178,6 +178,30 @@ src/headers/matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\matrix.dir\build.make CMakeFiles/matrix.dir/src/headers/matrix.cpp.s
 .PHONY : src/headers/matrix.cpp.s
 
+src/headers/north_west.obj: src/headers/north_west.cpp.obj
+.PHONY : src/headers/north_west.obj
+
+# target to build an object file
+src/headers/north_west.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\matrix.dir\build.make CMakeFiles/matrix.dir/src/headers/north_west.cpp.obj
+.PHONY : src/headers/north_west.cpp.obj
+
+src/headers/north_west.i: src/headers/north_west.cpp.i
+.PHONY : src/headers/north_west.i
+
+# target to preprocess a source file
+src/headers/north_west.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\matrix.dir\build.make CMakeFiles/matrix.dir/src/headers/north_west.cpp.i
+.PHONY : src/headers/north_west.cpp.i
+
+src/headers/north_west.s: src/headers/north_west.cpp.s
+.PHONY : src/headers/north_west.s
+
+# target to generate assembly for a file
+src/headers/north_west.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\matrix.dir\build.make CMakeFiles/matrix.dir/src/headers/north_west.cpp.s
+.PHONY : src/headers/north_west.cpp.s
+
 src/headers/vogel.obj: src/headers/vogel.cpp.obj
 .PHONY : src/headers/vogel.obj
 
@@ -240,6 +264,9 @@ help:
 	@echo ... src/headers/matrix.obj
 	@echo ... src/headers/matrix.i
 	@echo ... src/headers/matrix.s
+	@echo ... src/headers/north_west.obj
+	@echo ... src/headers/north_west.i
+	@echo ... src/headers/north_west.s
 	@echo ... src/headers/vogel.obj
 	@echo ... src/headers/vogel.i
 	@echo ... src/headers/vogel.s

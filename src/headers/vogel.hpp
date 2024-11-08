@@ -4,5 +4,6 @@
 #include <iostream>
 #include "matrix.hpp"
 using namespace std;
+pair<vector<int>, vector<int>> findDiff(TransportMatrix& tm);
 void vogel(TransportMatrix& tm);
 #endif

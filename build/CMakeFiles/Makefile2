@@ -90,12 +90,12 @@ clean: CMakeFiles/optimization_pt3.dir/clean
 CMakeFiles/matrix.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\matrix.dir\build.make CMakeFiles/matrix.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\matrix.dir\build.make CMakeFiles/matrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles --progress-num=1,2 "Built target matrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles --progress-num=1,2,3 "Built target matrix"
 .PHONY : CMakeFiles/matrix.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/matrix.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/matrix.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles 0
 .PHONY : CMakeFiles/matrix.dir/rule
@@ -121,7 +121,7 @@ CMakeFiles/matrix.dir/clean:
 CMakeFiles/vogel.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vogel.dir\build.make CMakeFiles/vogel.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vogel.dir\build.make CMakeFiles/vogel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles --progress-num=5,6 "Built target vogel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles --progress-num=6,7 "Built target vogel"
 .PHONY : CMakeFiles/vogel.dir/all
 
 # Build rule for subdir invocation for target.
@@ -153,12 +153,12 @@ CMakeFiles/optimization_pt3.dir/all: CMakeFiles/matrix.dir/all
 CMakeFiles/optimization_pt3.dir/all: CMakeFiles/vogel.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\optimization_pt3.dir\build.make CMakeFiles/optimization_pt3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\optimization_pt3.dir\build.make CMakeFiles/optimization_pt3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles --progress-num=3,4 "Built target optimization_pt3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles --progress-num=4,5 "Built target optimization_pt3"
 .PHONY : CMakeFiles/optimization_pt3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/optimization_pt3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/optimization_pt3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles 0
 .PHONY : CMakeFiles/optimization_pt3.dir/rule

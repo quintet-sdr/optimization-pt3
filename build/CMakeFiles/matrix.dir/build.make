@@ -86,17 +86,34 @@ CMakeFiles/matrix.dir/src/headers/matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/matrix.dir/src/headers/matrix.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\carry\Desktop\optimization-pt3\src\headers\matrix.cpp -o CMakeFiles\matrix.dir\src\headers\matrix.cpp.s
 
+CMakeFiles/matrix.dir/src/headers/north_west.cpp.obj: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/src/headers/north_west.cpp.obj: CMakeFiles/matrix.dir/includes_CXX.rsp
+CMakeFiles/matrix.dir/src/headers/north_west.cpp.obj: C:/Users/carry/Desktop/optimization-pt3/src/headers/north_west.cpp
+CMakeFiles/matrix.dir/src/headers/north_west.cpp.obj: CMakeFiles/matrix.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/matrix.dir/src/headers/north_west.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/matrix.dir/src/headers/north_west.cpp.obj -MF CMakeFiles\matrix.dir\src\headers\north_west.cpp.obj.d -o CMakeFiles\matrix.dir\src\headers\north_west.cpp.obj -c C:\Users\carry\Desktop\optimization-pt3\src\headers\north_west.cpp
+
+CMakeFiles/matrix.dir/src/headers/north_west.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/matrix.dir/src/headers/north_west.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\carry\Desktop\optimization-pt3\src\headers\north_west.cpp > CMakeFiles\matrix.dir\src\headers\north_west.cpp.i
+
+CMakeFiles/matrix.dir/src/headers/north_west.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/matrix.dir/src/headers/north_west.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\carry\Desktop\optimization-pt3\src\headers\north_west.cpp -o CMakeFiles\matrix.dir\src\headers\north_west.cpp.s
+
 # Object files for target matrix
 matrix_OBJECTS = \
-"CMakeFiles/matrix.dir/src/headers/matrix.cpp.obj"
+"CMakeFiles/matrix.dir/src/headers/matrix.cpp.obj" \
+"CMakeFiles/matrix.dir/src/headers/north_west.cpp.obj"
 
 # External object files for target matrix
 matrix_EXTERNAL_OBJECTS =
 
 libmatrix.a: CMakeFiles/matrix.dir/src/headers/matrix.cpp.obj
+libmatrix.a: CMakeFiles/matrix.dir/src/headers/north_west.cpp.obj
 libmatrix.a: CMakeFiles/matrix.dir/build.make
 libmatrix.a: CMakeFiles/matrix.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmatrix.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\carry\Desktop\optimization-pt3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmatrix.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\matrix.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\matrix.dir\link.txt --verbose=$(VERBOSE)
 
