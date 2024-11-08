@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libvogel.a CMakeFiles/vogel.dir/src/headers/vogel.cpp.obj
+C:\MinGW\bin\ranlib.exe libvogel.a

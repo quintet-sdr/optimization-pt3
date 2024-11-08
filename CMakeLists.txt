@@ -7,6 +7,8 @@ set(HEADER src/headers/methods.hpp src/headers/matrix.hpp)
 
 include_directories(src)
 add_library(matrix src/headers/matrix.cpp)
+add_library(vogel src/headers/vogel.cpp)
 
 add_executable(optimization_pt3 src/main.cpp)
 target_link_libraries(optimization_pt3 matrix)
+target_link_libraries(optimization_pt3 vogel)

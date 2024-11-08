@@ -1,4 +1,5 @@
 #include "headers/matrix.hpp"
+#include "headers/vogel.hpp"
 
 using namespace std;
 
@@ -13,5 +14,6 @@ int main() {
 
     TransportMatrix tm(s, c, d);
     cout << tm;
+    vogel(tm);
     return 0;
 }

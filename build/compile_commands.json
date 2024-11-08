@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Users/carry/Desktop/optimization-pt3/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/matrix.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\matrix.dir\\src\\headers\\matrix.cpp.obj -c C:\\Users\\carry\\Desktop\\optimization-pt3\\src\\headers\\matrix.cpp",
+  "file": "C:/Users/carry/Desktop/optimization-pt3/src/headers/matrix.cpp",
+  "output": "CMakeFiles/matrix.dir/src/headers/matrix.cpp.obj"
+},
+{
+  "directory": "C:/Users/carry/Desktop/optimization-pt3/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/vogel.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\vogel.dir\\src\\headers\\vogel.cpp.obj -c C:\\Users\\carry\\Desktop\\optimization-pt3\\src\\headers\\vogel.cpp",
+  "file": "C:/Users/carry/Desktop/optimization-pt3/src/headers/vogel.cpp",
+  "output": "CMakeFiles/vogel.dir/src/headers/vogel.cpp.obj"
+},
+{
+  "directory": "C:/Users/carry/Desktop/optimization-pt3/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/optimization_pt3.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\optimization_pt3.dir\\src\\main.cpp.obj -c C:\\Users\\carry\\Desktop\\optimization-pt3\\src\\main.cpp",
+  "file": "C:/Users/carry/Desktop/optimization-pt3/src/main.cpp",
+  "output": "CMakeFiles/optimization_pt3.dir/src/main.cpp.obj"
+}
+]
