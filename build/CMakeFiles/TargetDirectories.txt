@@ -1,5 +1,0 @@
-C:/Users/carry/Desktop/optimization-pt3/build/CMakeFiles/matrix.dir
-C:/Users/carry/Desktop/optimization-pt3/build/CMakeFiles/vogel.dir
-C:/Users/carry/Desktop/optimization-pt3/build/CMakeFiles/optimization_pt3.dir
-C:/Users/carry/Desktop/optimization-pt3/build/CMakeFiles/edit_cache.dir
-C:/Users/carry/Desktop/optimization-pt3/build/CMakeFiles/rebuild_cache.dir
