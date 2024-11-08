@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-pair<vector<int>, vector<int>> findDiff(TransportMatrix& tm) {
+pair<vector<int>, vector<int>> find_diff(TransportMatrix& tm) {
     vector<int> row_diff;
     vector<int> col_diff;
     int rows = tm.costs.size();
@@ -32,7 +32,7 @@ void vogel(TransportMatrix& tm) {
     int cols = tm.costs[0].size();
     int solution = 0;
     while (*max_element(tm.supply.begin(), tm.supply.end()) != 0 || *max_element(tm.demand.begin(), tm.demand.end()) != 0) {
-        pair<vector<int>, vector<int>> diffs = findDiff(tm);
+        pair<vector<int>, vector<int>> diffs = find_diff(tm);
         int max_in_rows = *max_element(diffs.first.begin(), diffs.first.end());
         int max_in_columns = *max_element(diffs.second.begin(), diffs.second.end());
         if (max_in_rows >= max_in_columns) {
