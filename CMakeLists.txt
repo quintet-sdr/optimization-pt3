@@ -7,12 +7,6 @@ set(HEADER src/headers/methods.hpp src/headers/matrix.hpp)
 
 include_directories(src)
 add_library(matrix src/headers/matrix.cpp)
-add_library(north-west src/headers/north-west.cpp)
-add_library(russel src/headers/russel.cpp)
-add_library(vogel src/headers/vogel.cpp)
 
 add_executable(optimization_pt3 src/main.cpp)
 target_link_libraries(optimization_pt3 matrix)
-target_link_libraries(optimization_pt3 north-west)
-target_link_libraries(optimization_pt3 russel)
-target_link_libraries(optimization_pt3 vogel)
