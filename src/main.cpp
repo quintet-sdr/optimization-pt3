@@ -18,18 +18,18 @@ void north_west(TransportMatrix& tm) {
         int minimum = min(supply, demand);
         tm.demand[j] -= minimum;
         tm.supply[i] -= minimum;
-        answer.push_back(make_pair(cell, minimum));
+        answer.emplace_back(cell, minimum);
         if (minimum == supply) {
           cout << "min=supply removed ";
           for (int k = j; k < tm.costs[i].size(); k++) {
-            peaked.push_back(make_pair(i, k));
+            peaked.emplace_back(i, k);
             cout << tm.costs[i][k] << " ";
           }
           cout << endl;
         } else {
           cout << "min=demand removed ";
           for (int k = i; k < tm.costs.size(); k++) {
-            peaked.push_back(make_pair(k, j));
+            peaked.emplace_back(k, j);
             cout << tm.costs[k][j] << " ";
           }
           cout << endl;
