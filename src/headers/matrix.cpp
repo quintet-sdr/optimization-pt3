@@ -32,7 +32,7 @@ ostream& operator<< (ostream& out, TransportMatrix& tm) {
 
     int source_i = 1;
     for (int i = 0; i < tm.costs.size(); i++) {
-      out << left << setw(10) << source_i++;
+      out << left << setw(10) << "A" + to_string(source_i++);
       for (int j = 0; j < tm.costs[i].size(); j++) {
         out << right << setw(6) << tm.costs[i][j];
       }
