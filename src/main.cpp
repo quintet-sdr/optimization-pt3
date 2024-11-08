@@ -14,8 +14,11 @@ int main() {
         {9, 2, 3, 6}
     };
     TransportMatrix tm(s, c, d);
+    TransportMatrix north_west_matrix = tm;
+    TransportMatrix vogel_matrix = tm;
+    TransportMatrix russel_matrix = tm;
     cout << tm;
-    vogel(tm);
-    north_west(tm);
+    vogel(vogel_matrix);
+    north_west(north_west_matrix);
     return 0;
 }
