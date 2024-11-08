@@ -1,8 +1,0 @@
-# ninja log v5
-3	395	1730973856292070319	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	29da69485579cf5c
-2	340	1730973856237078120	CMakeFiles/optimization_pt3.dir/src/headers/north-west.cpp.o	5e26640049490af6
-2	16	1730973855914123964	CMakeFiles/optimization_pt3.dir/src/headers/vogel.cpp.o	34492581173e87f0
-2	16	1730973855914123964	CMakeFiles/optimization_pt3.dir/src/headers/russel.cpp.o	b343e2d5254d4cd7
-463	544	1730974345193137901	optimization_pt3	8d4e350e0a995dda
-1	22	1730974379498718298	build.ninja	5382c9427220404e
-2	463	1730974345087145459	CMakeFiles/optimization_pt3.dir/src/headers/matrix.cpp.o	27a1e2461d6cd7cb

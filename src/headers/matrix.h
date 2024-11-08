@@ -9,10 +9,9 @@ class TransportMatrix{
         vector<int> supply;
         vector<int> demand;
         vector<vector<int>> costs;
-        
-    public:
         TransportMatrix();
         TransportMatrix(vector<int> S, vector<vector<int>> C, vector<int> D);
-        friend ostream& operator<< (ostream& out, const TransportMatrix& tm) { return out; }
+        friend ostream& operator<<(ostream& out, const TransportMatrix& tm);
 };
+ostream& operator<< (ostream& out, TransportMatrix& tm);
 #endif

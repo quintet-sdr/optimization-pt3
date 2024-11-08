@@ -1,6 +1,4 @@
-#include "headers/matrix.hpp"
-#include <iostream>
-#include <vector>
+#include "headers/matrix.h"
 
 using namespace std;
 
@@ -13,6 +11,7 @@ int main() {
         {1, 2, 3}
     };
 
-    MATRIX_H::TransportMatrix tm(s, c, d);
+    TransportMatrix tm(s, c, d);
     cout << tm;
+    return 0;
 }
