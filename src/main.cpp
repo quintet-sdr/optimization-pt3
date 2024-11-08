@@ -1,5 +1,5 @@
 #include "headers/matrix.hpp"
-
+#include "headers/vogel.hpp"
 #include <algorithm>
 
 
@@ -66,13 +66,9 @@ int main() {
         {4, 5, 9, 8},
         {9, 2, 3, 6}
     };
-
     TransportMatrix tm(s, c, d);
     cout << tm;
-<<<<<<< HEAD
     vogel(tm);
-=======
     north_west(tm);
->>>>>>> a67d5fcd239049de1c84457607d483944b9dc419
     return 0;
 }
