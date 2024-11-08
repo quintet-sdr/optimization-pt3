@@ -86,7 +86,7 @@ void vogel(TransportMatrix& tm) {
             }
         }
     }
-    cout << "The basic feasible solution is " << solution << endl;
+    cout << "Answer: x0 = " << solution << endl;
 }
 
 
