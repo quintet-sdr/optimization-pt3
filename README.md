@@ -11,13 +11,13 @@
 
 After cloning the repository, simply type in the following commands:
 
-For Unix-like systems:
+for Unix-like systems:
 
 ```shell
 ./run.sh
 ```
 
-For Windows systems:
+for Windows systems:
 
 ```shell
 .\run.cmd
