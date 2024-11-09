@@ -19,7 +19,7 @@ for Unix-like systems:
 
 for Windows systems:
 
-```shell
+```powershell
 .\run.cmd
 ```
 
