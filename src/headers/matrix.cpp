@@ -6,19 +6,21 @@ using namespace std;
 
 TransportMatrix::TransportMatrix() : supply(0), demand(0), costs(0) {};
 
-TransportMatrix::TransportMatrix(const vector<int>& S, vector<vector<int>> C, const vector<int>& D) : supply(S), demand(D), costs(std::move(C)) {
-    int sum_S = 0, sum_D = 0;
-    for (int i : S) {
-        sum_S += i;
-    }
-    for (int i : D) {
-        sum_D += i;
-    }
+TransportMatrix::TransportMatrix(const vector<int>& S, vector<vector<int>> C, const vector<int>& D) : supply(S), demand(D), costs(std::move(C)) {}
 
-    if (sum_S != sum_D) {
-        cout << "The problem is not balanced" << endl;
-        exit(-1);
-    }
+bool TransportMatrix::check_the_balance(const TransportMatrix& tm) {
+  int sum_S = 0, sum_D = 0;
+        for (int i : tm.supply) {
+            sum_S += i;
+        }
+        for (int i : tm.demand) {
+            sum_D += i;
+        }
+        if (sum_S != sum_D) {
+            cout << "The problem is not balanced" << endl;
+            return false;
+        }
+        return true;
 }
 
 ostream& operator<< (ostream& out, TransportMatrix& tm) {

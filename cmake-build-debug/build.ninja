@@ -119,13 +119,45 @@ build libvogel.a: CXX_STATIC_LIBRARY_LINKER__vogel_Debug CMakeFiles/vogel.dir/sr
   TARGET_PDB = vogel.a.dbg
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target parser
+
+
+#############################################
+# Order-only phony target for parser
+
+build cmake_object_order_depends_target_parser: phony || CMakeFiles/parser.dir
+
+build CMakeFiles/parser.dir/src/headers/parser.cpp.o: CXX_COMPILER__parser_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/headers/parser.cpp || cmake_object_order_depends_target_parser
+  DEP_FILE = CMakeFiles/parser.dir/src/headers/parser.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src
+  OBJECT_DIR = CMakeFiles/parser.dir
+  OBJECT_FILE_DIR = CMakeFiles/parser.dir/src/headers
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target parser
+
+
+#############################################
+# Link the static library libparser.a
+
+build libparser.a: CXX_STATIC_LIBRARY_LINKER__parser_Debug CMakeFiles/parser.dir/src/headers/parser.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/parser.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libparser.a
+  TARGET_PDB = parser.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target optimization_pt3
 
 
 #############################################
 # Order-only phony target for optimization_pt3
 
-build cmake_object_order_depends_target_optimization_pt3: phony || cmake_object_order_depends_target_matrix cmake_object_order_depends_target_vogel
+build cmake_object_order_depends_target_optimization_pt3: phony || cmake_object_order_depends_target_matrix cmake_object_order_depends_target_parser cmake_object_order_depends_target_vogel
 
 build CMakeFiles/optimization_pt3.dir/src/main.cpp.o: CXX_COMPILER__optimization_pt3_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/main.cpp || cmake_object_order_depends_target_optimization_pt3
   DEP_FILE = CMakeFiles/optimization_pt3.dir/src/main.cpp.o.d
@@ -142,9 +174,9 @@ build CMakeFiles/optimization_pt3.dir/src/main.cpp.o: CXX_COMPILER__optimization
 #############################################
 # Link the executable optimization_pt3
 
-build optimization_pt3: CXX_EXECUTABLE_LINKER__optimization_pt3_Debug CMakeFiles/optimization_pt3.dir/src/main.cpp.o | libmatrix.a libvogel.a || libmatrix.a libvogel.a
+build optimization_pt3: CXX_EXECUTABLE_LINKER__optimization_pt3_Debug CMakeFiles/optimization_pt3.dir/src/main.cpp.o | libmatrix.a libvogel.a libparser.a || libmatrix.a libparser.a libvogel.a
   FLAGS = -g
-  LINK_LIBRARIES = libmatrix.a  libvogel.a
+  LINK_LIBRARIES = libmatrix.a  libvogel.a  libparser.a
   OBJECT_DIR = CMakeFiles/optimization_pt3.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -179,6 +211,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build matrix: phony libmatrix.a
 
+build parser: phony libparser.a
+
 build vogel: phony libvogel.a
 
 # =============================================================================
@@ -189,7 +223,7 @@ build vogel: phony libvogel.a
 #############################################
 # Folder: /home/projacktor/Projects/optimization-pt3/cmake-build-debug
 
-build all: phony libmatrix.a libvogel.a optimization_pt3
+build all: phony libmatrix.a libvogel.a libparser.a optimization_pt3
 
 # =============================================================================
 # Built-in targets

@@ -4,3 +4,5 @@ a.exe
 #/cmake-build-debug
 #CMakeLists.txt
 text
+build
+.vscode
