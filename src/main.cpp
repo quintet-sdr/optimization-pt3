@@ -9,11 +9,12 @@ using namespace std;
 int main() {
     JsonParser parser;
     vector<string> json_files = {
-        "tests/Test-1.json",
-        "tests/Test-2.json",
-        "tests/Test-3.json"
+        "../tests/Test-1.json",
+        "../tests/Test-2.json",
+        "../tests/Test-3.json"
     };
      for (const string& file : json_files) {
+        cout << endl << string(65, '*') << endl;
         cout << "Processing: " << file << endl;
         string json_data = parser.read_json_file(file);
         vector<int> supply = parser.parse_supply(json_data);

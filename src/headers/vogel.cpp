@@ -54,7 +54,6 @@ void update_supply_demand(TransportMatrix& tm, int supply_index, int demand_inde
 void vogel(TransportMatrix& tm) {
     cout << endl << string(tm.costs[0].size() * 6 + 40, '-') << endl;
     cout << "The Vogel Approximation method:" << endl;
-    cout << string(tm.costs[0].size() * 6 + 40, '-') << endl;
 
     int solution = 0;
     while (*max_element(tm.supply.begin(), tm.supply.end()) != 0 || *max_element(tm.demand.begin(), tm.demand.end()) != 0) {
@@ -93,6 +92,7 @@ void vogel(TransportMatrix& tm) {
         }
     }
     cout << "Answer: x0 = " << solution << endl;
+    cout << string(tm.costs[0].size() * 6 + 40, '-') << endl;
 }
 
 
