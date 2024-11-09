@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[document]{ragged2e}
+\usepackage{sverb}
+
+\geometry{left=3cm, right=3cm, top=2cm, bottom=2cm}
+\setlength{\parskip}{4pt}
+\renewcommand\labelitemi{\(\vcenter{\hbox{\tiny{\({\bullet}\)}}}\)}
+
+\chead{Report of Programming Task 2 of the course \enquote{Introduction to Optimization} / Fall 2024}
+
+\title{\textbf{Report 2}}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\thispagestyle{fancy}
+
+\section*{Team information (B23-ISE-02):}
+\begin{itemize}
+\item Team member 1 (leader): Kirill Efimovich (\href{mailto:k.efimovich@innopolis.university}{k.efimovich@innopolis.university}), grade 5/5
+\item Team member 2: Arsen Galiev (\href{mailto:a.galiev@innopolis.university}{a.galiev@innopolis.university}), grade: 5/5
+\item Team member 3: Asqar Arslanov (\href{mailto:a.arslanov@innopolis.university}{a.arslanov@innopolis.university}), grade: 5/5
+\item Team member 4: Ilya-Linh Nguen (\href{mailto:i.nguen@innopolis.university}{i.nguen@innopolis.university}), grade: 5/5
+\end{itemize}
+
+\section*{Link to the product:}
+
+\begin{itemize}
+\item \url{https://github.com/quintet-sdr/optimization-pt3}
+\end{itemize}
+
+\section*{Programming language:}
+
+\begin{itemize}
+\item C++ and CMake
+\item To launch the code: \fbox{\texttt{\$ cargo run}}
+\end{itemize}
+
+\section*{Transportation problem:}
+
+\begin{itemize}
+\item The North-West method
+\item Vogel’s approximation method
+\item  Russell’s approximation method
+\end{itemize}
+
+\newpage
+
+\section*{Tests:}
+
+You may find and edit the tests inside \texttt{tests} directory.
+
+\begin{enumerate}[label={(\arabic*)}, itemsep=0.25in]
+\item \textbf{Input:}
+\begin{itemize}
+\item Name: Test-1.
+\item Supply: \(\begin{bmatrix} 251 & 300 & 400 \end{bmatrix}\).
+\item Costs: \(\begin{bmatrix}
+11 & 13 & 17 & 14 \\
+16 & 18 & 14 & 10 \\
+21 & 24 & 13 & 10
+\end{bmatrix}\).
+\item Demand: \(\begin{bmatrix} 200 & 225 & 275 & 250 \end{bmatrix}\).
+\end{itemize}
+\textbf{Output:}
+\begin{itemize}
+\item For the North-West corner method answer: \(x^0 = \).
+\item For the Vogel’s approximation method method answer: \(x^0 = \).
+\item For the Russell’s approximation method method answer: \(x^0 = \).
+\end{itemize}
+
+\item \textbf{Input:}
+\begin{itemize}
+\item Name: Test-2.
+\item Supply: \(\begin{bmatrix} 160 & 140 & 170 \end{bmatrix}\).
+\item Costs: \(\begin{bmatrix}
+7 & 8 & 1 & 2 \\
+4 & 5 & 9 & 8 \\
+9 & 2 & 5 & 6
+\end{bmatrix}\).
+\item Demand: \(\begin{bmatrix} 120 & 50 & 190 & 110 \end{bmatrix}\).
+\end{itemize}
+\textbf{Output:}
+\begin{itemize}
+\item For the North-West corner method answer: \(x^0 = \).
+\item For the Vogel’s approximation method method answer: \(x^0 = \).
+\item For the Russell’s approximation method method answer: \(x^0 = \).
+\end{itemize}
+
+\item \textbf{Input:}
+\begin{itemize}
+\item Name: Test-3.
+\item Supply: \(\begin{bmatrix} 251 & 300 & 400 \end{bmatrix}\).
+\item Costs: \(\begin{bmatrix}
+11 & 13 & 17 & 14 \\
+16 & 18 & 14 & 10 \\
+21 & 24 & 13 & 10
+\end{bmatrix}\).
+\item Demand: \(\begin{bmatrix} 200 & 225 & 275 & 250 \end{bmatrix}\).
+\end{itemize}
+\textbf{Output:}
+\begin{itemize}
+\item Answer: The problem is not balanced.
+\end{itemize}
+\end{enumerate}
+
+\newpage
+
+\textbf{Code:}
+
+\fbox{\texttt{src/main.cpp}}
+\verbinput{./src/main.cpp}
+
+\newpage
+
+\fbox{src/headers/matrix.cpp}
+\verbinput{./src/headers/matrix.cpp}
+
+\newpage
+
+\fbox{src/headers/north_west.cpp}
+\verbinput{./src/headers/north_west.cpp}
+
+\newpage
+
+\fbox{src/headers/vogel.cpp}
+\verbinput{./src/headers/vogel.cpp}
+
+\newpage
+
+\fbox{src/headers/russel.cpp}
+\verbinput{./src/headers/russel.cpp}
+
+
+\end{document}
