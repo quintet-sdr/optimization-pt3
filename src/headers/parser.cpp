@@ -1,5 +1,18 @@
 #include "parser.hpp"
 
+string JsonParser::read_json_file(const string& filePath) {
+    ifstream inputFile(filePath);
+    if (!inputFile.is_open()) {
+        cerr << "Error: Could not open the file " << filePath << endl;
+        return "";
+    }
+    stringstream buffer;
+    buffer << inputFile.rdbuf(); 
+    return buffer.str(); 
+}
+
+
+
 vector<int> JsonParser::parse_supply(const string& json) {
     vector<int> result;
     istringstream ss(json);

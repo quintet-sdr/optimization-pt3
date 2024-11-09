@@ -6,15 +6,27 @@
 using namespace std;
 
 int main() {
-    ifstream inputFile("data.json");
-    stringstream buffer;
-    buffer << inputFile.rdbuf(); 
-    string jsonContent = buffer.str(); 
     JsonParser parser;
-    vector<int> supply = parser.parse_supply(jsonContent);
-    vector<int> demand = parser.parse_demand(jsonContent);
-    vector<vector<int>> costs = parser.parse_costs(jsonContent);
-    TransportMatrix tm(supply, costs, demand);
-    north_west(tm);
+    vector<string> json_files = {
+        "tests/Test-1.json",
+        "tests/Test-2.json",
+        "tests/Test-3.json"
+    };
+     for (const string& file : json_files) {
+        cout << "Processing: " << file << endl;
+        string json_data = parser.read_json_file(file);
+        vector<int> supply = parser.parse_supply(json_data);
+        vector<int> demand = parser.parse_demand(json_data);
+        vector<vector<int>> costs = parser.parse_costs(json_data);
+        TransportMatrix tm(supply, costs, demand);
+        if (!tm.check_the_balance(tm)) {
+            continue;
+        }
+        TransportMatrix vogel_matrix = tm;
+        TransportMatrix russel_matrix = tm;
+        TransportMatrix north_west_matrix = tm;
+        north_west(north_west_matrix);
+        vogel(vogel_matrix);
+    }
     return 0;
 }

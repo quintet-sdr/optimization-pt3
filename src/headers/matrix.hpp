@@ -11,6 +11,7 @@ class TransportMatrix{
         vector<vector<int>> costs;
         TransportMatrix();
         TransportMatrix(const vector<int>& S, vector<vector<int>> C, const vector<int>& D);
+        bool check_the_balance(const TransportMatrix& tm);
         friend ostream& operator<<(ostream& out, const TransportMatrix& tm);
 };
 ostream& operator<< (ostream& out, TransportMatrix& tm);
