@@ -24,6 +24,7 @@ int main() {
         if (!tm.check_the_balance(tm)) {
             continue;
         }
+        cout << tm;
         TransportMatrix vogel_matrix = tm;
         TransportMatrix russel_matrix = tm;
         TransportMatrix north_west_matrix = tm;
