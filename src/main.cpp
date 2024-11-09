@@ -9,9 +9,9 @@ using namespace std;
 int main() {
     JsonParser parser;
     vector<string> json_files = {
-        "tests/Test-1.json",
-        "tests/Test-2.json",
-        "tests/Test-3.json"
+        "../tests/Test-1.json",
+        "../tests/Test-2.json",
+        "../tests/Test-3.json"
     };
      for (const string& file : json_files) {
         cout << "Processing: " << file << endl;
