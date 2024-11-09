@@ -3,32 +3,31 @@
 using namespace std;
 
 struct pair_hash {
-  template <class T1, class T2>
-  size_t operator() (const pair<T1, T2>& p) const {
+  template<class T1, class T2>
+  size_t operator()(const pair<T1, T2> &p) const {
     auto hash1 = hash<T1>{}(p.first);
     auto hash2 = hash<T2>{}(p.second);
     return hash1 ^ (hash2 << 1);
   }
 };
 
-pair<pair<int, int>, int> findMaxAbsValue(const vector<vector<pair<pair<int, int>, int>>>& matrix) {
-pair<pair<int, int>, int> maxElement = {{0, 0}, 0};
-int maxAbsValue = 0;
+pair<pair<int, int>, int> findMaxAbsValue(const vector<vector<pair<pair<int, int>, int>>> &matrix) {
+  pair<pair<int, int>, int> maxElement = {{0, 0}, 0};
+  int maxAbsValue = 0;
 
-for (const auto& row : matrix) {
-for (const auto& element : row) {
-int absValue = abs(element.second);
-if (absValue > maxAbsValue) {
-maxAbsValue = absValue;
-maxElement = element;
-}
-}
-}
-return maxElement;
+  for (const auto &row : matrix) {
+    for (const auto &element : row) {
+      int absValue = abs(element.second);
+      if (absValue > maxAbsValue) {
+        maxAbsValue = absValue;
+        maxElement = element;
+      }
+    }
+  }
+  return maxElement;
 }
 
-
-void russel(TransportMatrix& tm) {
+void russel(TransportMatrix &tm) {
   unordered_set<pair<int, int>, pair_hash> peaked;
   vector<pair<int, int>> answer;
   int r = tm.costs.size(), c = tm.costs[0].size();
