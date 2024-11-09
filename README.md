@@ -7,10 +7,10 @@
 **Blazingly fast ⚡, 100% memory ~~un~~safe 🛡️ C++**
 
 ## Run locally
-After cloning the repository, simply type in the following command.
+After cloning the repository, simply type in the following command (only for Linux).
 
 ```shell
-
+bash run.bash
 ```
 
 If you are using [CLion](https://www.jetbrains.com/ru-ru/clion/) just press **run** button and check the result

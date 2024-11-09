@@ -4,4 +4,5 @@ mkdir build
 cd build
 cmake ..
 make
-./optimization_pt3
+cd ..
+./build/optimization_pt3
