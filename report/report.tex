@@ -6,13 +6,15 @@
 \usepackage{geometry}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage[document]{ragged2e}
+\usepackage{siunitx}
 \usepackage{sverb}
 
 \geometry{left=3cm, right=3cm, top=2cm, bottom=2cm}
 \setlength{\parskip}{4pt}
 \renewcommand\labelitemi{\(\vcenter{\hbox{\tiny{\({\bullet}\)}}}\)}
+\sisetup{group-minimum-digits=0, group-separator={,}, group-digits=integer, per-mode=symbol}
 
-\chead{Report of Programming Task 2 of the course \enquote{Introduction to Optimization} / Fall 2024}
+\chead{Report of Programming Task 3 of the course \enquote{Introduction to Optimization} / Fall 2024}
 
 \title{\textbf{Report 2}}
 \author{}
@@ -40,25 +42,27 @@
 \section*{Programming language:}
 
 \begin{itemize}
-    \item C++ and CMake
-    \item To launch the code: \\
-    for Linux / MacOS users: \fbox{\texttt{\$ bash run.bash}} \\
-    for Windows users: \fbox{\texttt{\$ .\textbackslash run.cmd}}
+    \item C++ (CMake)
+    \item To launch the code:
+          \begin{itemize}
+              \item for Unix-like: \fbox{\texttt{\$ ./run.bash}} \\
+              \item for Windows: \fbox{\texttt{> .\textbackslash run.cmd}}
+          \end{itemize}
 \end{itemize}
 
 \section*{Transportation problem:}
 
 \begin{itemize}
-    \item The North-West method
-    \item Vogel’s approximation method
-    \item  Russell’s approximation method
+    \item North-West Corner Method
+    \item Vogel's Approximation Method
+    \item Russell's Approximation Method
 \end{itemize}
 
 \newpage
 
 \section*{Tests:}
 
-You may find and edit the tests inside \texttt{tests} directory.
+You may find and edit the tests inside the \texttt{tests/} directory.
 
 \begin{enumerate}[label={(\arabic*)}, itemsep=0.25in]
     \item \textbf{Input:}
@@ -66,15 +70,15 @@ You may find and edit the tests inside \texttt{tests} directory.
               \item Name: Test-1.
               \item Supply: \(\begin{bmatrix} 251 & 300 & 400 \end{bmatrix}\).
               \item Costs: \(\begin{bmatrix}
-              11 & 13 & 17 & 14 \\
-              16 & 18 & 14 & 10 \\
-              21 & 24 & 13 & 10
-              \end{bmatrix}\).
+                        11 & 13 & 17 & 14 \\
+                        16 & 18 & 14 & 10 \\
+                        21 & 24 & 13 & 10
+                    \end{bmatrix}\).
               \item Demand: \(\begin{bmatrix} 200 & 225 & 275 & 250 \end{bmatrix}\).
-          \end{itemize}        
+          \end{itemize}
           \textbf{Output:}
           \begin{itemize}
-            \item Answer: The problem is not balanced.
+              \item Answer: The problem is not balanced.
           \end{itemize}
 
     \item \textbf{Input:}
@@ -82,17 +86,17 @@ You may find and edit the tests inside \texttt{tests} directory.
               \item Name: Test-2.
               \item Supply: \(\begin{bmatrix} 160 & 140 & 170 \end{bmatrix}\).
               \item Costs: \(\begin{bmatrix}
-              7 & 8 & 1 & 2 \\
-              4 & 5 & 9 & 8 \\
-              9 & 2 & 5 & 6
-              \end{bmatrix}\).
+                        7 & 8 & 1 & 2 \\
+                        4 & 5 & 9 & 8 \\
+                        9 & 2 & 5 & 6
+                    \end{bmatrix}\).
               \item Demand: \(\begin{bmatrix} 120 & 50 & 190 & 110 \end{bmatrix}\).
-          \end{itemize}        
+          \end{itemize}
           \textbf{Output:}
           \begin{itemize}
-            \item For the North-West corner method answer: \(x^0 = 3320\).
-            \item For the Vogel’s approximation method method answer: \(x^0 = 1330\).
-            \item For the Russell’s approximation method method answer: \(x^0 = 1530\).
+              \item For the North-West Corner Method, the answer \(x^0 = \num{3320}\).
+              \item For Vogel's Approximation Method, the answer \(x^0 = \num{1330}\).
+              \item For Russell's Approximation Method, the answer \(x^0 = \num{1530}\).
           \end{itemize}
 
     \item \textbf{Input:}
@@ -100,17 +104,17 @@ You may find and edit the tests inside \texttt{tests} directory.
               \item Name: Test-3.
               \item Supply: \(\begin{bmatrix} 251 & 300 & 400 \end{bmatrix}\).
               \item Costs: \(\begin{bmatrix}
-              11 & 13 & 17 & 14 \\
-              16 & 18 & 14 & 10 \\
-              21 & 24 & 13 & 10
-              \end{bmatrix}\).
+                        11 & 13 & 17 & 14 \\
+                        16 & 18 & 14 & 10 \\
+                        21 & 24 & 13 & 10
+                    \end{bmatrix}\).
               \item Demand: \(\begin{bmatrix} 200 & 225 & 275 & 250 \end{bmatrix}\).
-          \end{itemize}        
+          \end{itemize}
           \textbf{Output:}
           \begin{itemize}
-            \item For the North-West corner method answer: \(x^0 = 1015\).
-            \item For the Vogel’s approximation method method answer: \(x^0 = 779\).
-            \item For the Russell’s approximation method method answer: \(x^0 = 807\).
+              \item For the North-West Corner Method, the answer \(x^0 = \num{1015}\).
+              \item For Vogel's Approximation Method, the answer \(x^0 = \num{779}\).
+              \item For Russell's Approximation Method, the answer \(x^0 = \num{807}\).
           \end{itemize}
 \end{enumerate}
 
@@ -119,27 +123,25 @@ You may find and edit the tests inside \texttt{tests} directory.
 \textbf{Code:}
 
 \fbox{\texttt{src/main.cpp}}
-\verbinput{./src/main.cpp}
+\verbinput{../src/main.cpp}
 
 \newpage
 
-\fbox{src/headers/matrix.cpp}
-\verbinput{./src/headers/matrix.cpp}
+\fbox{\texttt{src/headers/matrix.cpp}}
+\verbinput{../src/headers/matrix.cpp}
 
 \newpage
 
-\fbox{src/headers/north_west.cpp}
-\verbinput{./src/headers/north_west.cpp}
+\fbox{\texttt{src/headers/north\_west.cpp}}
+\verbinput{../src/headers/north_west.cpp}
 
 \newpage
 
-\fbox{src/headers/vogel.cpp}
-\verbinput{./src/headers/vogel.cpp}
+\fbox{\texttt{src/headers/russel.cpp}}
+\verbinput{../src/headers/russel.cpp}
 
 \newpage
 
-\fbox{src/headers/russel.cpp}
-\verbinput{./src/headers/russel.cpp}
-
-
+\fbox{\texttt{src/headers/vogel.cpp}}
+\verbinput{../src/headers/vogel.cpp}
 \end{document}
