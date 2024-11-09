@@ -26,7 +26,7 @@ For Windows systems:
 If you are using [CLion](https://www.jetbrains.com/ru-ru/clion/) just, press the
 **run** button and check the result.
 
-You can also edit tests inside the [`tests`](/tests) directory.
+You can also edit tests inside the [`tests/`](/tests/) directory.
 
 ## Report
 
