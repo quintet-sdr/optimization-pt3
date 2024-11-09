@@ -1,24 +1,20 @@
 #include "headers/matrix.hpp"
 #include "headers/north_west.hpp"
 #include "headers/vogel.hpp"
+#include "headers/parser.hpp"
 
 using namespace std;
 
-
 int main() {
-    vector<int> s = {160, 140, 170};
-    vector<int> d = {120, 50, 190, 110};
-    vector<vector<int>> c = {
-        {7, 8, 1, 2},
-        {4, 5, 9, 8},
-        {9, 2, 3, 6}
-    };
-    TransportMatrix tm(s, c, d);
-    TransportMatrix north_west_matrix = tm;
-    TransportMatrix vogel_matrix = tm;
-    TransportMatrix russel_matrix = tm;
-    cout << tm;
-    vogel(vogel_matrix);
-    north_west(north_west_matrix);
+    ifstream inputFile("data.json");
+    stringstream buffer;
+    buffer << inputFile.rdbuf(); 
+    string jsonContent = buffer.str(); 
+    JsonParser parser;
+    vector<int> supply = parser.parse_supply(jsonContent);
+    vector<int> demand = parser.parse_demand(jsonContent);
+    vector<vector<int>> costs = parser.parse_costs(jsonContent);
+    TransportMatrix tm(supply, costs, demand);
+    north_west(tm);
     return 0;
 }

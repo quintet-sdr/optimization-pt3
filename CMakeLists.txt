@@ -9,7 +9,9 @@ include_directories(src)
 add_library(matrix src/headers/matrix.cpp
         src/headers/north_west.cpp)
 add_library(vogel src/headers/vogel.cpp)
+add_library(parser src/headers/parser.cpp)
 
 add_executable(optimization_pt3 src/main.cpp)
 target_link_libraries(optimization_pt3 matrix)
 target_link_libraries(optimization_pt3 vogel)
+target_link_libraries(optimization_pt3 parser)
