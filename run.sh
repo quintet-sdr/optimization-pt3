@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-cd build/ || mkdir build/ && cd build/ || exit
+mkdir -p build/
+cd build/ || exit
 cmake ../
 make
 cd ../
