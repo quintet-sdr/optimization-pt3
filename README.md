@@ -9,14 +9,14 @@
 ## Run locally
 After cloning the repository, simply type in the following commands:
 
-For Linux users:
+For Linux/MacOS users:
 ```shell
 bash run.bash
 ```
 
 For Windows users:
 ```shell
-
+.\run.cmd
 ```
 
 
