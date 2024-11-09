@@ -28,6 +28,8 @@ pair<pair<int, int>, int> findMaxAbsValue(const vector<vector<pair<pair<int, int
 }
 
 void russel(TransportMatrix &tm) {
+  cout << endl << string(tm.costs[0].size() * 6 + 40, '-') << endl;
+  cout << "The North-West corner method" << endl;
   unordered_set<pair<int, int>, pair_hash> peaked;
   vector<pair<int, int>> answer;
   int r = tm.costs.size(), c = tm.costs[0].size();
@@ -97,18 +99,9 @@ void russel(TransportMatrix &tm) {
   }
 
   int x0 = 0;
-  cout << string(tm.costs[0].size() * 6 + 40, '-') << endl;
   for (int i = 0; i < answer.size(); i++) {
     x0 += answer[i].first * answer[i].second;
-    cout << answer[i].first << " * " << answer[i].second;
-    if (i != answer.size() - 1) {
-      cout << " + ";
-    } else {
-      cout << " = ";
-    }
   }
-  cout << x0;
-  cout << endl;
-  cout << string(tm.costs[0].size() * 6 + 40, '-') << endl;
   cout << "Answer: x0 = " << x0 << endl;
+  cout << string(tm.costs[0].size() * 6 + 40, '-') << endl;
 }
