@@ -1,13 +1,19 @@
 # ninja log v5
-787	811	1731074544821948266	libmatrix.a	201f51d45a395da3
-2	40	1731154993412015215	build.ninja	5382c9427220404e
-3	911	1731074544920944743	CMakeFiles/vogel.dir/src/headers/vogel.cpp.o	a41cc11c3958389a
-2	612	1731083093273948470	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	563bb3bed7eb05cd
-911	929	1731074544940944032	libvogel.a	dc357220637864d
-4	911	1731072932816884165	CMakeFiles/matrix.dir/src/headers/matrix.cpp.o	7b5135d6bdfab72a
-612	697	1731083093358937068	optimization_pt3	e59eb54165ca5cd3
+969	994	1731155449416679246	libmatrix.a	201f51d45a395da3
+2	40	1731162967135877525	build.ninja	5382c9427220404e
+5	1004	1731155449425683786	CMakeFiles/vogel.dir/src/headers/vogel.cpp.o	a41cc11c3958389a
+3	1612	1731162553900435410	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	563bb3bed7eb05cd
+1004	1022	1731155449445693877	libvogel.a	dc357220637864d
+4	969	1731155449390666128	CMakeFiles/matrix.dir/src/headers/matrix.cpp.o	7b5135d6bdfab72a
+1612	1742	1731162554030435085	optimization_pt3	e59eb54165ca5cd3
 16	26	1730974924620138595	librussel.a	8aa3e03b00bb5ed7
 2	334	1730974924927125114	CMakeFiles/north-west.dir/src/headers/north-west.cpp.o	8d769c6c8e074aec
 2	16	1730974924610139034	CMakeFiles/russel.dir/src/headers/russel.cpp.o	1da3d969608a8078
 334	344	1730974924938124631	libnorth-west.a	dca9c96ef5d1f1b
-2	786	1731074544796949156	CMakeFiles/matrix.dir/src/headers/north_west.cpp.o	ad5a131375b36b09
+4	915	1731155449336638885	CMakeFiles/matrix.dir/src/headers/north_west.cpp.o	ad5a131375b36b09
+5	1152	1731163214957611430	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	563bb3bed7eb05cd
+4	1448	1731163215251609834	CMakeFiles/matrix.dir/src/headers/russel.cpp.o	98f3b107a4e47078
+1448	1479	1731163215285609650	libmatrix.a	504a4642f968d357
+1479	1611	1731163215415608944	optimization_pt3	e59eb54165ca5cd3
+4	1122	1731163232402516453	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	563bb3bed7eb05cd
+1122	1274	1731163232551515639	optimization_pt3	e59eb54165ca5cd3

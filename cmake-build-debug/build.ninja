@@ -63,6 +63,13 @@ build CMakeFiles/matrix.dir/src/headers/north_west.cpp.o: CXX_COMPILER__matrix_u
   OBJECT_DIR = CMakeFiles/matrix.dir
   OBJECT_FILE_DIR = CMakeFiles/matrix.dir/src/headers
 
+build CMakeFiles/matrix.dir/src/headers/russel.cpp.o: CXX_COMPILER__matrix_unscanned_Debug /home/projacktor/Projects/optimization-pt3/src/headers/russel.cpp || cmake_object_order_depends_target_matrix
+  DEP_FILE = CMakeFiles/matrix.dir/src/headers/russel.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/projacktor/Projects/optimization-pt3/src
+  OBJECT_DIR = CMakeFiles/matrix.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix.dir/src/headers
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target matrix
@@ -71,7 +78,7 @@ build CMakeFiles/matrix.dir/src/headers/north_west.cpp.o: CXX_COMPILER__matrix_u
 #############################################
 # Link the static library libmatrix.a
 
-build libmatrix.a: CXX_STATIC_LIBRARY_LINKER__matrix_Debug CMakeFiles/matrix.dir/src/headers/matrix.cpp.o CMakeFiles/matrix.dir/src/headers/north_west.cpp.o
+build libmatrix.a: CXX_STATIC_LIBRARY_LINKER__matrix_Debug CMakeFiles/matrix.dir/src/headers/matrix.cpp.o CMakeFiles/matrix.dir/src/headers/north_west.cpp.o CMakeFiles/matrix.dir/src/headers/russel.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/matrix.dir
   POST_BUILD = :
