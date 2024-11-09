@@ -12,3 +12,15 @@
 334	344	1730974924938124631	libnorth-west.a	dca9c96ef5d1f1b
 4	915	1731155449336638885	CMakeFiles/matrix.dir/src/headers/north_west.cpp.o	ad5a131375b36b09
 4	1448	1731163215251609834	CMakeFiles/matrix.dir/src/headers/russel.cpp.o	98f3b107a4e47078
+5	856	1731163347439875197	CMakeFiles/matrix.dir/src/headers/north_west.cpp.o	ad5a131375b36b09
+4	941	1731163347532874669	CMakeFiles/matrix.dir/src/headers/matrix.cpp.o	7b5135d6bdfab72a
+6	973	1731163347564874487	CMakeFiles/vogel.dir/src/headers/vogel.cpp.o	a41cc11c3958389a
+7	987	1731163347578874408	CMakeFiles/parser.dir/src/headers/parser.cpp.o	4c0a535d70b3e8aa
+974	994	1731163347587874357	libvogel.a	dc357220637864d
+988	1007	1731163347600874283	libparser.a	d4c2f4ab925c7f68
+7	1336	1731163347927872426	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	563bb3bed7eb05cd
+6	1538	1731163348127871290	CMakeFiles/matrix.dir/src/headers/russel.cpp.o	98f3b107a4e47078
+1538	1570	1731163348162871092	libmatrix.a	504a4642f968d357
+1570	1732	1731163348320870194	optimization_pt3	a6e720efba301340
+4	1230	1731163385962655265	CMakeFiles/optimization_pt3.dir/src/main.cpp.o	563bb3bed7eb05cd
+1230	1400	1731163386130654300	optimization_pt3	a6e720efba301340

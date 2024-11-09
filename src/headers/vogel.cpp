@@ -1,5 +1,6 @@
 #include "vogel.hpp"
 #include <algorithm>
+
 using namespace std;
 
 pair<vector<int>, vector<int>> find_row_col_diff(TransportMatrix& tm) {

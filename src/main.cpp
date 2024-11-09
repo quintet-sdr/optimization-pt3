@@ -28,6 +28,7 @@ int main() {
         TransportMatrix north_west_matrix = tm;
         north_west(north_west_matrix);
         vogel(vogel_matrix);
+        russel(russel_matrix);
     }
     return 0;
 }
