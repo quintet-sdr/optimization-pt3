@@ -5,7 +5,7 @@ using namespace std;
 
 void north_west(TransportMatrix& tm) {
   cout << endl << string(tm.costs[0].size() * 6 + 40, '-') << endl;
-  cout << "The Russel's Approximation method" << endl;
+  cout << "The North-West corner method" << endl;
   vector<pair<int, int>> peaked, answer;
   for (int i = 0; i < tm.costs.size(); i++) {
     for (int j = 0; j < tm.costs[0].size(); j++) {
