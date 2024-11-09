@@ -1,7 +1,3 @@
 @echo off
-mkdir build
-cd build
-cmake ..
-make
-cd ..
-build/optimization_pt3.exe
+g++ src/headers/*.cpp src/main.cpp -o optimization_pt3
+./optimization_pt3
