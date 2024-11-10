@@ -2,27 +2,31 @@
 
 **by SDR ⚡**
 
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white)
 
 **Blazingly fast ⚡, 100% memory ~~un~~safe 🛡️ C++**
 
 ## Run locally
+
 After cloning the repository, simply type in the following commands:
 
-For Linux/MacOS users:
+for Unix-like systems:
+
 ```shell
-bash run.bash
+./run.sh
 ```
 
-For Windows users:
-```shell
+for Windows systems:
+
+```powershell
 .\run.cmd
 ```
 
+If you are using [CLion](https://www.jetbrains.com/ru-ru/clion/) just, press the
+**run** button and check the result.
 
-If you are using [CLion](https://www.jetbrains.com/ru-ru/clion/) just press **run** button and check the result
-
-You can also edit tests inside [`tests`](/tests) folder.
+You can also edit tests inside the [`tests/`](/tests/) directory.
 
 ## Report
 
